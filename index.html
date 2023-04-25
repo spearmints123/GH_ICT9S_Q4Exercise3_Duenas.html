@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cm to Feet Length Converter</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<h2>Length Converter</h2>
+<p>Type a value in the cm field to convert the value to Feet:</p>
+<p>
+  <label>cm</label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Feet: <span id="outputFeet"></span></p>
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*0.032808;
+}
+</script>
+</body>
+</html>
